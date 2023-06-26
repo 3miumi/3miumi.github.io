@@ -1205,7 +1205,9 @@ input, select, textarea {
 		padding: 4rem 2rem;
 		z-index: 3;
 	}
-
+	.sub-project {
+		text-align: right;
+	  }
 		#wrapper:before {
 			content: '';
 			display: block;
@@ -1551,7 +1553,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 		#main article#project {
-			width: 70rem; /* Set the desired width for the "project" article */
+			width: 65rem; /* Set the desired width for the "project" article */
 		  }
 			#main article.active {
 				-moz-transform: translateY(0);
@@ -1666,14 +1668,15 @@ input, select, textarea {
 		  }
 		  
 		  .image-main-container {
-			flex-basis: 200%;
-			margin-right: 2rem; /* Adjust the margin as needed */
+			flex-basis: 50%;
+			margin-right: 1.5rem; /* Adjust the margin as needed */
 		  }
 		  
 		  .image-main {
 			display: block;
-			max-width: 100%;
+			width: 500px;
 			height: auto;
+			
 		  }
 		  
 		  .text-container {
@@ -1682,7 +1685,17 @@ input, select, textarea {
 		  
 		  
 		 
+		  .animated-container {
+			opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+		  }
 		  
+		  .bounce {
+			transform: translateY(0);
+ 			opacity: 1;
+		  }
+     
 	
 		  
 		  /* CSS */
@@ -1718,3 +1731,10 @@ input, select, textarea {
 		  }
 		  
 		  
+		  .madeby {
+			font-weight: bold;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+			color:#696969;
+		  }

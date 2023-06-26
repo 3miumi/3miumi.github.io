@@ -11,6 +11,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			function reveal() {
+			var reveals = document.querySelectorAll(".animated-container");
+
+			for (var i = 0; i < reveals.length; i++) {
+			var windowHeight = window.innerHeight;
+			var elementTop = reveals[i].getBoundingClientRect().top;
+			var elementVisible = 150;
+
+			if (elementTop < windowHeight - elementVisible) {
+				reveals[i].classList.add("bounce");
+			} else {
+				reveals[i].classList.remove("bounce");
+			}
+			}
+			}
+
+			window.addEventListener("scroll", reveal);
+		  </script>
+		  
+		  
+		  
+		  
 	</head>
 	<body class="is-preload">
 
@@ -34,7 +57,7 @@
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#project">Projects</a></li>
 								<li><a href="#work">Project</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a href="#elements">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -76,16 +99,21 @@
 						<!-- Work -->
 							<article id="project">
 								<h2 class="major">Projects</h2>
-								<div class="container">
+								<h3 class="sub-project"><i>School projects</i></h3>
+								<div class="container animated-container" data-animate="false">
 									<div class="image-main-container">
 									  <img src="images/e-commerce.png" alt="" class="image-main" />
 									</div>
 									<div class="work-details">
 									  <h3 class="submajor"><br />Grocery Express Full Stack Service</h3>
 									  <div class="icons">
+										<p class="madeby">Made with:</p>
 										<img src="images/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40" />&nbsp;
-										<img src="images/spring-original-wordmark.svg" title="Java" alt="Java" width="40" height="40" />&nbsp;
-										<img src="images/docker-plain-wordmark.svg" title="Java" alt="Java" width="40" height="40" />&nbsp;
+										<img src="images/spring-original-wordmark.svg" title="spring" alt="spring" width="40" height="40" />&nbsp;
+										<img src="images/docker-plain-wordmark.svg" title="docker" alt="docker" width="40" height="40" />&nbsp;
+										<img src="images/javascript-original.svg" title="docker" alt="docker" width="40" height="40" />&nbsp;
+										<img src="images/vuejs-original-wordmark.svg" title="vue" alt="vue" width="40" height="40" />&nbsp;
+										<svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_Amazon-EC2_32_svg__a"><stop stop-color="#C8511B" offset="0%"></stop><stop stop-color="#F90" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><path d="M0 0h40v40H0z" fill="url(#Arch_Amazon-EC2_32_svg__a)"></path><path d="M26.052 27L26 13.948 13 14v13.052L26.052 27zM27 14h2v1h-2v2h2v1h-2v2h2v1h-2v2h2v1h-2v2h2v1h-2v.052a.95.95 0 01-.948.948H26v2h-1v-2h-2v2h-1v-2h-2v2h-1v-2h-2v2h-1v-2h-2v2h-1v-2h-.052a.95.95 0 01-.948-.948V27h-2v-1h2v-2h-2v-1h2v-2h-2v-1h2v-2h-2v-1h2v-2h-2v-1h2v-.052a.95.95 0 01.948-.948H13v-2h1v2h2v-2h1v2h2v-2h1v2h2v-2h1v2h2v-2h1v2h.052a.95.95 0 01.948.948V14zm-6 19H7V19h2v-1H7.062C6.477 18 6 18.477 6 19.062v13.876C6 33.523 6.477 34 7.062 34h13.877c.585 0 1.061-.477 1.061-1.062V31h-1v2zM34 7.062v13.876c0 .585-.476 1.062-1.061 1.062H30v-1h3V7H19v3h-1V7.062C18 6.477 18.477 6 19.062 6h13.877C33.524 6 34 6.477 34 7.062z" fill="#FFF"></path></g></svg>
 									  </div>
 									  <div class="description">
 										<p>I designed, developed, and tested a secure drone delivery service system using the MVC architectural pattern. 
@@ -94,36 +122,115 @@
 										  ensuring reliability and scalability.
 										</p>
 									  </div>
-									  <a href="http://droneservicefrontend.s3-website-us-west-2.amazonaws.com/" class="button-32">Demo</a>
+									  <a href="http://droneservicefrontend.s3-website-us-west-2.amazonaws.com/" class="button">Demo</a>
 									  
 									</div>
 								  </div>
 								  <p> <br /></p>
 
-								  <div class="container">
+								  <div class="container animated-container" data-animate="false">
 									<div class="image-main-container">
-									  <img src="images/kf_1.gif" alt="" class="image-main" />
+									  <img src="images/database.png" alt="" class="image-main" />
 									</div>
 									<div class="work-details">
-									  <h3 class="submajor"><br />Artifical intelligence for Meteorites prediction</h3>
+									  <h3 class="submajor">MyRaceSignUp.com</h3>
 									  <div class="icons">
+										<p class="madeby">Made with:</p>
 										<img src="images/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40" />&nbsp;
-										<img src="images/spring-original-wordmark.svg" title="Java" alt="Java" width="40" height="40" />&nbsp;
-										<img src="images/docker-plain-wordmark.svg" title="Java" alt="Java" width="40" height="40" />&nbsp;
+										<img src="images/mysql-original-wordmark.svg" title="Java" alt="Java" width="40" height="40" />&nbsp;
+				
 									  </div>
 									  <div class="description">
-										<p>I designed, developed, and tested a secure drone delivery service system using the MVC architectural pattern. 
-										  Collaborating with a team, I implemented user authentication, Java and Spring Boot for RESTful APIs, Vue.js for the front-end, 
-										  and Docker for simplified deployment. The system was deployed on AWS EC2, with the front-end hosted on S3 and MySQL on RDS, 
-										  ensuring reliability and scalability.
+										<p>Developed a racer signup system for identifying race events and tracking past results. As a team lead and developer in a group of four, 
+											I worked on design, implementation, and testing. 
+											I designed the racer database and implemented the ETL flow for a JDBC application, extracting data from a MySQL database using the JDBC API.
 										</p>
 									  </div>
 									  
 									  
 									</div>
 								  </div>
+								  <p> <br /></p>
 
+
+								  <div class="container animated-container" data-animate="false">
+									<div class="image-main-container">
+									  <img src="images/kf_1.gif" alt="" class="image-main" id = "gif"/>
+									</div>
+									<div class="work-details">
+									  <h3 class="submajor"><br />Artifical intelligence for Meteorites prediction</h3>
+									  <div class="icons">
+										<p class="madeby">Made with:</p>
+										<p class="madeby">Made with:</p>
+										<img src="images/python-original-wordmark.svg" title="python" alt="python" width="40" height="40" />&nbsp;
+										<img src="images/numpy-original-wordmark.svg" title="numpy" alt="numpy" width="40" height="40" />&nbsp;
+									  </div>
+									  <div class="description">
+										<p>Developed a project using Kalman Filters to predict the future positions of meteorites based on sensor readings. 
+											Implemented estimation techniques to forecast meteorite positions and designed a defense system to destroy them before impact using a laser turret.
+											 Demonstrated proficiency in estimation algorithms and real-time decision-making for proactive defense.
+										</p>
+									  </div>
+									  
+									  
+									</div>
+								  </div>
+								  
+								  <script>
+									var gifElement = document.getElementById('gif');
+									var gifVisible = false;
+								  
+									function checkGifVisibility() {
+									  var elementTop = gifElement.getBoundingClientRect().top;
+									  var elementBottom = gifElement.getBoundingClientRect().bottom;
+									  var isVisible = elementTop < window.innerHeight && elementBottom >= 0;
+								  
+									  if (isVisible && !gifVisible) {
+										// If the GIF is visible and not already playing, start playing it
+										gifElement.play();
+										gifVisible = true;
+									  } else if (!isVisible && gifVisible) {
+										// If the GIF is not visible and currently playing, stop it
+										gifElement.pause();
+										gifVisible = false;
+									  }
+									}
+								  
+									// Check the visibility of the GIF on page load
+									checkGifVisibility();
+								  
+									// Check the visibility of the GIF on scroll
+									window.addEventListener('scroll', checkGifVisibility);
+								  </script>
+						
+						        <p> <br /></p>
+								<h3 class="sub-project">work projects</h3>
+								<div class="container animated-container" data-animate="false">
+									<div class="image-main-container">
+										<img src="" alt="" class="image-main" id = "gif"/>
+									</div>
+									<div class="work-details">
+										<h3 class="submajor"><br />Whole Genome Sequencing Concole pipeline</h3>
+										<div class="icons">
+										<p class="madeby">Made with:</p>
+										<img src="images/python-original-wordmark.svg" title="python" alt="python" width="40" height="40" />&nbsp;
+										<img src="images/numpy-original-wordmark.svg" title="numpy" alt="numpy" width="40" height="40" />&nbsp;
+										<img src="images/docker-plain-wordmark.svg" title="Java" alt="Java" width="40" height="40" />&nbsp;
+										</div>
+										<div class="description">
+										<p>Developed a project using Kalman Filters to predict the future positions of meteorites based on sensor readings. 
+											Implemented estimation techniques to forecast meteorite positions and designed a defense system to destroy them before impact using a laser turret.
+												Demonstrated proficiency in estimation algorithms and real-time decision-making for proactive defense.
+										</p>
+										</div>
+										
+										
+									</div>
+									</div> 
+								  
+								  
 								
+						
 										
 							
 									  
