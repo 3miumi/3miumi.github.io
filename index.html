@@ -5,295 +5,459 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Dimension by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script>
-			function reveal() {
+
+<head>
+	<title>Dimension by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<script>
+		function reveal() {
 			var reveals = document.querySelectorAll(".animated-container");
 
 			for (var i = 0; i < reveals.length; i++) {
-			var windowHeight = window.innerHeight;
-			var elementTop = reveals[i].getBoundingClientRect().top;
-			var elementVisible = 150;
+				var windowHeight = window.innerHeight;
+				var elementTop = reveals[i].getBoundingClientRect().top;
+				var elementVisible = 150;
 
-			if (elementTop < windowHeight - elementVisible) {
-				reveals[i].classList.add("bounce");
-			} else {
-				reveals[i].classList.remove("bounce");
+				if (elementTop < windowHeight - elementVisible) {
+					reveals[i].classList.add("bounce");
+				} else {
+					reveals[i].classList.remove("bounce");
+				}
 			}
-			}
-			}
+		}
 
-			window.addEventListener("scroll", reveal);
-		  </script>
-		  
-		  
-		  
-		  
-	</head>
-	<body class="is-preload">
+		window.addEventListener("scroll", reveal);
+	</script>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
+
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<span class="icon fa-gem"></span>
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>Ziwen Ming</h1>
+					<p> Computer science graduate student, Bioinformatician <br />
+					</p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#intro">Intro</a></li>
+					<li><a href="#project">Projects</a></li>
+					<li><a href="#work">Project</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<!--<li><a href="#elements">Elements</a></li>-->
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Intro -->
+			<article id="intro">
+				<h2 class="major">About Me</h2>
+				<span class="image main"><img src="images/pic01_1.jpg" alt="" /></span>
+				<p> I am pursuing a graduate degree in Computer Science at the Georgia Institute of Technology,
+					with a keen focus on expanding my knowledge and expertise in this field.<br /><br />
+
+					I am a software developer, bioinformatics research associate working on genome sequencing pipeline
+					at <a href="https://www.iehinc.com/">IEH Laboratories</a>, located in Seattle, WA.<br /><br />
+					You can read my pass experience through my<a href="#work"> resume.</a>
+				</p>
+
+				<h2 class="submajor">Why</h2>
+				<h3 class="submajor">to choose to be a software developer?</h3>
+
+				<p>
+					I first became interested in data management during my time as a bioinformatics research associate,
+					when I was introduced to programs like R and Python. The time and effort savings that programming
+					provided became immediately apparent to me.
+					Inspired by this insight, I decided to teach myself Python and create some simple programs to help
+					with things like metadata organization and data integration.
+					I became more and more absorbed in the world of programming as time went on, always on the lookout
+					for new technologies and eager to discover novel approaches to achieving higher
+					levels of usefulness.<br /><br />
+
+					I decided to become a software programmer because of my natural talent and interest in the field.
+					Because of this defining decision, I'm moving on with plans to pursue higher education and enhance
+					my abilities and expertise.
+					Java, C++, C#, SQL, CSS, HTML, and JavaScript are just some of the languages I've learned over this
+					process. In addition, I have extensive experience in all three phases of a project’s life cycle:
+					backend programming, frontend design, and database administration.
+
+					<br /><br />I am currently expanding my knowledge by taking a graduate level course in artificial
+					intelligence. This project has given me the opportunity to learn about AI and experiment with the
+					OpenAI API. I hope to further my skills as a software programmer and contribute
+					to innovative improvements in the area by keeping up of the latest technical trends.<br /><br />
+
+					My work path and my will to become a skilled software programmer have been shaped by my interest in
+					self-directed learning, and in exploring new technologies. I can't wait to face new obstacles,
+					complete difficult tasks, and keep breaking ground in the field of computer science.
+				</p>
+
+			</article>
+
+			<!-- Work -->
+			<article id="project">
+				<h2 class="major">Projects</h2>
+				<h3 class="sub-project"><u>school projects</u> </h3>
+				<div class="container animated-container" data-animate="false">
+					<div class="image-main-container">
+						<img src="images/e-commerce.png" alt="" class="image-main" />
+					</div>
+					<div class="work-details">
+						<h3 class="submajor">Grocery Express Full Stack Service</h3>
+						<div class="icons">
+							<p class="madeby">Made with:</p>
+							<img src="images/java-original-wordmark.svg" title="Java" alt="Java" width="40"
+								height="40" />&nbsp;
+							<img src="images/spring-original-wordmark.svg" title="spring" alt="spring" width="40"
+								height="40" />&nbsp;
+							<img src="images/docker-plain-wordmark.svg" title="docker" alt="docker" width="40"
+								height="40" />&nbsp;
+							<img src="images/javascript-original.svg" title="docker" alt="docker" width="40"
+								height="40" />&nbsp;
+							<img src="images/vuejs-original-wordmark.svg" title="vue" alt="vue" width="40"
+								height="40" />&nbsp;
+							<svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_Amazon-EC2_32_svg__a">
+										<stop stop-color="#C8511B" offset="0%"></stop>
+										<stop stop-color="#F90" offset="100%"></stop>
+									</linearGradient>
+								</defs>
+								<g fill="none" fill-rule="evenodd">
+									<path d="M0 0h40v40H0z" fill="url(#Arch_Amazon-EC2_32_svg__a)"></path>
+									<path
+										d="M26.052 27L26 13.948 13 14v13.052L26.052 27zM27 14h2v1h-2v2h2v1h-2v2h2v1h-2v2h2v1h-2v2h2v1h-2v.052a.95.95 0 01-.948.948H26v2h-1v-2h-2v2h-1v-2h-2v2h-1v-2h-2v2h-1v-2h-2v2h-1v-2h-.052a.95.95 0 01-.948-.948V27h-2v-1h2v-2h-2v-1h2v-2h-2v-1h2v-2h-2v-1h2v-2h-2v-1h2v-.052a.95.95 0 01.948-.948H13v-2h1v2h2v-2h1v2h2v-2h1v2h2v-2h1v2h2v-2h1v2h.052a.95.95 0 01.948.948V14zm-6 19H7V19h2v-1H7.062C6.477 18 6 18.477 6 19.062v13.876C6 33.523 6.477 34 7.062 34h13.877c.585 0 1.061-.477 1.061-1.062V31h-1v2zM34 7.062v13.876c0 .585-.476 1.062-1.061 1.062H30v-1h3V7H19v3h-1V7.062C18 6.477 18.477 6 19.062 6h13.877C33.524 6 34 6.477 34 7.062z"
+										fill="#FFF"></path>
+								</g>
+							</svg>
 						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Ziwen Ming</h1>
-								<p> Computer science graduate student at GA Tech & Bioinformatician <br />
-								</p>
-							</div>
+						<div class="description">
+							<p>I designed, developed, and tested a secure drone delivery service system using the MVC
+								architectural pattern.
+								Collaborating with a team, I implemented user authentication, Java and Spring Boot for
+								RESTful APIs, Vue.js for the front-end,
+								and Docker for simplified deployment. The system was deployed on AWS EC2, with the
+								front-end hosted on S3 and MySQL on RDS,
+								ensuring reliability and scalability.
+							</p>
 						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#project">Projects</a></li>
-								<li><a href="#work">Project</a></li>
-								<li><a href="#elements">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+						<a href="http://droneservicefrontend.s3-website-us-west-2.amazonaws.com/"
+							class="button">Demo</a>
 
-				<!-- Main -->
-					<div id="main">
+					</div>
+				</div>
+				<p> <br /></p>
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">About Me</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p> I am pursuing a graduate degree in Computer Science at the Georgia Institute of Technology, 
-									with a keen focus on expanding my knowledge and expertise in this field.<br /><br />
-							
-									I am a software developer, bioinformatics research associate working on genome sequencing pipeline at <a href="https://www.iehinc.com/">IEH Laboratories</a>, located in Seattle, WA.<br /><br />
-									You can read my pass experience through my<a href="#work"> resume.</a>
-								</p>
-								
-								<h2 class="submajor">Why</h2> <h3 class="submajor">to choose to be a software developer?</h3>
-								
-								<p> 
-									I first became interested in data management during my time as a bioinformatics research associate, when I was introduced to programs like R and Python. The time and effort savings that programming provided became immediately apparent to me. 
-									Inspired by this insight, I decided to teach myself Python and create some simple programs to help with things like metadata organization and data integration. 
-									I became more and more absorbed in the world of programming as time went on, always on the lookout for new technologies and eager to discover novel approaches to achieving higher
-									 levels of usefulness.<br /><br />
+				<div class="container animated-container" data-animate="false">
+					<div class="image-main-container">
+						<img src="images/database.png" alt="" class="image-main" />
+					</div>
+					<div class="work-details">
+						<h3 class="submajor">MyRaceSignUp.com</h3>
+						<div class="icons">
+							<p class="madeby">Made with:</p>
+							<img src="images/java-original-wordmark.svg" title="Java" alt="Java" width="40"
+								height="40" />&nbsp;
+							<img src="images/mysql-original-wordmark.svg" title="Java" alt="Java" width="40"
+								height="40" />&nbsp;
 
-									I decided to become a software programmer because of my natural talent and interest in the field. Because of this defining decision, I'm moving on with plans to pursue higher education and enhance my abilities and expertise.
-									Java, C++, C#, SQL, CSS, HTML, and JavaScript are just some of the languages I've learned over this process. In addition, I have extensive experience in all three phases of a project’s life cycle: backend programming, frontend design, and database administration.
-
-									<br /><br />I am currently expanding my knowledge by taking a graduate level course in artificial intelligence. This project has given me the opportunity to learn about AI and experiment with the OpenAI API. I hope to further my skills as a software programmer and contribute 
-									to innovative improvements in the area by keeping up of the latest technical trends.<br /><br />
-
-									My work path and my will to become a skilled software programmer have been shaped by my interest in self-directed learning, and in exploring new technologies. I can't wait to face new obstacles, complete difficult tasks, and keep breaking ground in the field of computer science.
-									</p>
-								
-							</article>
-
-						<!-- Work -->
-							<article id="project">
-								<h2 class="major">Projects</h2>
-								<h3 class="sub-project"><i>School projects</i></h3>
-								<div class="container animated-container" data-animate="false">
-									<div class="image-main-container">
-									  <img src="images/e-commerce.png" alt="" class="image-main" />
-									</div>
-									<div class="work-details">
-									  <h3 class="submajor"><br />Grocery Express Full Stack Service</h3>
-									  <div class="icons">
-										<p class="madeby">Made with:</p>
-										<img src="images/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40" />&nbsp;
-										<img src="images/spring-original-wordmark.svg" title="spring" alt="spring" width="40" height="40" />&nbsp;
-										<img src="images/docker-plain-wordmark.svg" title="docker" alt="docker" width="40" height="40" />&nbsp;
-										<img src="images/javascript-original.svg" title="docker" alt="docker" width="40" height="40" />&nbsp;
-										<img src="images/vuejs-original-wordmark.svg" title="vue" alt="vue" width="40" height="40" />&nbsp;
-										<svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_Amazon-EC2_32_svg__a"><stop stop-color="#C8511B" offset="0%"></stop><stop stop-color="#F90" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><path d="M0 0h40v40H0z" fill="url(#Arch_Amazon-EC2_32_svg__a)"></path><path d="M26.052 27L26 13.948 13 14v13.052L26.052 27zM27 14h2v1h-2v2h2v1h-2v2h2v1h-2v2h2v1h-2v2h2v1h-2v.052a.95.95 0 01-.948.948H26v2h-1v-2h-2v2h-1v-2h-2v2h-1v-2h-2v2h-1v-2h-2v2h-1v-2h-.052a.95.95 0 01-.948-.948V27h-2v-1h2v-2h-2v-1h2v-2h-2v-1h2v-2h-2v-1h2v-2h-2v-1h2v-.052a.95.95 0 01.948-.948H13v-2h1v2h2v-2h1v2h2v-2h1v2h2v-2h1v2h2v-2h1v2h.052a.95.95 0 01.948.948V14zm-6 19H7V19h2v-1H7.062C6.477 18 6 18.477 6 19.062v13.876C6 33.523 6.477 34 7.062 34h13.877c.585 0 1.061-.477 1.061-1.062V31h-1v2zM34 7.062v13.876c0 .585-.476 1.062-1.061 1.062H30v-1h3V7H19v3h-1V7.062C18 6.477 18.477 6 19.062 6h13.877C33.524 6 34 6.477 34 7.062z" fill="#FFF"></path></g></svg>
-									  </div>
-									  <div class="description">
-										<p>I designed, developed, and tested a secure drone delivery service system using the MVC architectural pattern. 
-										  Collaborating with a team, I implemented user authentication, Java and Spring Boot for RESTful APIs, Vue.js for the front-end, 
-										  and Docker for simplified deployment. The system was deployed on AWS EC2, with the front-end hosted on S3 and MySQL on RDS, 
-										  ensuring reliability and scalability.
-										</p>
-									  </div>
-									  <a href="http://droneservicefrontend.s3-website-us-west-2.amazonaws.com/" class="button">Demo</a>
-									  
-									</div>
-								  </div>
-								  <p> <br /></p>
-
-								  <div class="container animated-container" data-animate="false">
-									<div class="image-main-container">
-									  <img src="images/database.png" alt="" class="image-main" />
-									</div>
-									<div class="work-details">
-									  <h3 class="submajor">MyRaceSignUp.com</h3>
-									  <div class="icons">
-										<p class="madeby">Made with:</p>
-										<img src="images/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40" />&nbsp;
-										<img src="images/mysql-original-wordmark.svg" title="Java" alt="Java" width="40" height="40" />&nbsp;
-				
-									  </div>
-									  <div class="description">
-										<p>Developed a racer signup system for identifying race events and tracking past results. As a team lead and developer in a group of four, 
-											I worked on design, implementation, and testing. 
-											I designed the racer database and implemented the ETL flow for a JDBC application, extracting data from a MySQL database using the JDBC API.
-										</p>
-									  </div>
-									  
-									  
-									</div>
-								  </div>
-								  <p> <br /></p>
+						</div>
+						<div class="description">
+							<p>Developed a racer signup system for identifying race events and tracking past results. As
+								a team lead and developer in a group of four,
+								I worked on design, implementation, and testing.
+								I designed the racer database and implemented the ETL flow for a JDBC application,
+								extracting data from a MySQL database using the JDBC API.
+							</p>
+						</div>
 
 
-								  <div class="container animated-container" data-animate="false">
-									<div class="image-main-container">
-									  <img src="images/kf_1.gif" alt="" class="image-main" id = "gif"/>
-									</div>
-									<div class="work-details">
-									  <h3 class="submajor"><br />Artifical intelligence for Meteorites prediction</h3>
-									  <div class="icons">
-										<p class="madeby">Made with:</p>
-										<p class="madeby">Made with:</p>
-										<img src="images/python-original-wordmark.svg" title="python" alt="python" width="40" height="40" />&nbsp;
-										<img src="images/numpy-original-wordmark.svg" title="numpy" alt="numpy" width="40" height="40" />&nbsp;
-									  </div>
-									  <div class="description">
-										<p>Developed a project using Kalman Filters to predict the future positions of meteorites based on sensor readings. 
-											Implemented estimation techniques to forecast meteorite positions and designed a defense system to destroy them before impact using a laser turret.
-											 Demonstrated proficiency in estimation algorithms and real-time decision-making for proactive defense.
-										</p>
-									  </div>
-									  
-									  
-									</div>
-								  </div>
-								  
-								  <script>
-									var gifElement = document.getElementById('gif');
-									var gifVisible = false;
-								  
-									function checkGifVisibility() {
-									  var elementTop = gifElement.getBoundingClientRect().top;
-									  var elementBottom = gifElement.getBoundingClientRect().bottom;
-									  var isVisible = elementTop < window.innerHeight && elementBottom >= 0;
-								  
-									  if (isVisible && !gifVisible) {
-										// If the GIF is visible and not already playing, start playing it
-										gifElement.play();
-										gifVisible = true;
-									  } else if (!isVisible && gifVisible) {
-										// If the GIF is not visible and currently playing, stop it
-										gifElement.pause();
-										gifVisible = false;
-									  }
-									}
-								  
-									// Check the visibility of the GIF on page load
-									checkGifVisibility();
-								  
-									// Check the visibility of the GIF on scroll
-									window.addEventListener('scroll', checkGifVisibility);
-								  </script>
-						
-						        <p> <br /></p>
-								<h3 class="sub-project">work projects</h3>
-								<div class="container animated-container" data-animate="false">
-									<div class="image-main-container">
-										<img src="" alt="" class="image-main" id = "gif"/>
-									</div>
-									<div class="work-details">
-										<h3 class="submajor"><br />Whole Genome Sequencing Concole pipeline</h3>
-										<div class="icons">
-										<p class="madeby">Made with:</p>
-										<img src="images/python-original-wordmark.svg" title="python" alt="python" width="40" height="40" />&nbsp;
-										<img src="images/numpy-original-wordmark.svg" title="numpy" alt="numpy" width="40" height="40" />&nbsp;
-										<img src="images/docker-plain-wordmark.svg" title="Java" alt="Java" width="40" height="40" />&nbsp;
-										</div>
-										<div class="description">
-										<p>Developed a project using Kalman Filters to predict the future positions of meteorites based on sensor readings. 
-											Implemented estimation techniques to forecast meteorite positions and designed a defense system to destroy them before impact using a laser turret.
-												Demonstrated proficiency in estimation algorithms and real-time decision-making for proactive defense.
-										</p>
-										</div>
-										
-										
-									</div>
-									</div> 
-								  
-								  
-								
-						
-										
-							
-									  
-							</article>
+					</div>
+				</div>
+				<p> <br /></p>
 
-						<!-- About -->
-							<article id="work">
-								<h2 class="major">Project</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-							</article>
 
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
+				<div class="container animated-container" data-animate="false">
+					<div class="image-main-container">
+						<img src="images/kf_1.gif" alt="" class="image-main" id="gif" />
+					</div>
+					<div class="work-details">
+						<h3 class="submajor">Artifical intelligence for Meteorites prediction</h3>
+						<div class="icons">
+							<p class="madeby">Made with:</p>
+							<img src="images/python-original-wordmark.svg" title="python" alt="python" width="40"
+								height="40" />&nbsp;
+							<img src="images/numpy-original-wordmark.svg" title="numpy" alt="numpy" width="40"
+								height="40" />&nbsp;
+						</div>
+						<div class="description">
+							<p>Developed a project using Kalman Filters to predict the future positions of meteorites
+								based on sensor readings.
+								Implemented estimation techniques to forecast meteorite positions and designed a defense
+								system to destroy them before impact using a laser turret.
+								Demonstrated proficiency in estimation algorithms and real-time decision-making for
+								proactive defense.
+							</p>
+						</div>
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+					</div>
+				</div>
+				<p> <br /></p>
+				<div class="container animated-container" data-animate="false">
+					<div class="image-main-container">
+						<img src="images/solar.gif" alt="" class="image-main" id="gif" />
+					</div>
+					<div class="work-details">
+						<h3 class="submajor">Artifical intelligence for Solar System prediction</h3>
+						<div class="icons">
+							<p class="madeby">Made with:</p>
+							<img src="images/python-original-wordmark.svg" title="python" alt="python" width="40"
+								height="40" />&nbsp;
+							<img src="images/numpy-original-wordmark.svg" title="numpy" alt="numpy" width="40"
+								height="40" />&nbsp;
+						</div>
+						<div class="description">
+							<p> Implemented a particle filter to localize a man-made satellite in a solar system. The satellite receives measurements of the gravitational pull of the planets in the solar system. 
+								Using a particle filter, the task was to estimate the satellite's position given the noisy measurements. 
+								The challenge included limited CPU time and the need to efficiently determine the satellite's location within a specified time frame.
+								By utilizing the particle filter algorithm and integrating multiple measurements, the satellite's position could be accurately estimated, demonstrating the effectiveness of the localization approach.
+							</p>
+						</div>
+
+
+					</div>
+				</div>
+				<!-- <script>
+					function reveal() {
+						var reveals = document.querySelectorAll(".gif");
+			
+						for (var i = 0; i < reveals.length; i++) {
+							var windowHeight = window.innerHeight;
+							var elementTop = reveals[i].getBoundingClientRect().top;
+							var elementVisible = 150;
+			
+							if (elementTop < windowHeight - elementVisible) {
+								reveals[i].classList.remove("hidden");
+							} else {
+								reveals[i].classList.add("hidden");
+							}
+						}
+					}
+			
+					window.addEventListener("scroll", reveal);
+					
+
+					
+				</script> -->
+
+				<script>
+
+
+					const gifElement = document.querySelector('.gif');
+					const containerElement = document.querySelector('.container');
+
+					let isGifPlaying = false;
+
+					function playGif() {
+						if (!isGifPlaying) {
+							gifElement.src = gifElement.src;
+							isGifPlaying = true;
+						}
+					}
+
+					function stopGif() {
+						if (isGifPlaying) {
+							gifElement.src = '';
+							isGifPlaying = false;
+						}
+					}
+
+					function checkGifVisibility() {
+						const containerTop = containerElement.offsetTop;
+						const containerBottom = containerTop + containerElement.offsetHeight;
+						const scrollPosition = window.scrollY + window.innerHeight;
+
+						if (scrollPosition > containerTop && scrollPosition < containerBottom) {
+							playGif();
+						} else {
+							stopGif();
+						}
+					}
+
+					// Initial check on page load
+					checkGifVisibility();
+
+					// Check GIF visibility on scroll
+					window.addEventListener('scroll', checkGifVisibility);
+				</script>
+
+
+				<!-- <hr class="divider animated-container"> -->
+
+				<h3 class="sub-project"><u>work projects</u> </h3>
+				<div class="container animated-container" data-animate="false">
+					<div class="image-main-container">
+						<img src="images/pipeline.PNG" alt="" class="image-main" />
+					</div>
+					<div class="work-details">
+						<h3 class="submajor">Whole Genome Sequencing Concole pipeline</h3>
+						<div class="icons">
+							<p class="madeby">Made with:</p>
+							<img src="images/python-original-wordmark.svg" title="python" alt="python" width="40"
+								height="40" />&nbsp;
+							<img src="images/numpy-original-wordmark.svg" title="numpy" alt="numpy" width="40"
+								height="40" />&nbsp;
+							<img src="images/Biopython_logo.svg.png" title="Bio" alt="bio" width="40"
+								height="40" />&nbsp;
+						</div>
+						<div class="description">
+							<p>The WGSIEH pipeline, developed in Python3, enables efficient analysis of bacterial whole
+								genome sequencing data. It includes steps such as quality assessment, species
+								identification, contamination search, de novo assembly,
+								MLST analysis, and screening for antibiotic resistance genes and virulence factors. The
+								pipeline generates PDF reports for each sample, summarizing the findings and
+								observations.
+							</p>
+						</div>
+
+
+					</div>
+				</div>
+
+				<p> <br /></p>
+				<div class="container animated-container" data-animate="false">
+					<div class="image-main-container">
+						<img src="images/ncbi.png" alt="" class="image-main" />
+						<!-- <img src="images/output.PNG" alt="" class="image-main" /> -->
+					</div>
+					<div class="work-details">
+						<h3 class="submajor">Automated Genome Data Extraction for Database Creation & Genome Analysis
+						</h3>
+						<div class="icons">
+							<p class="madeby">Made with:</p>
+							<img src="images/python-original-wordmark.svg" title="python" alt="python" width="40"
+								height="40" />&nbsp;
+							<img src="images/numpy-original-wordmark.svg" title="numpy" alt="numpy" width="40"
+								height="40" />&nbsp;
+							<img src="images/selenium-original.svg" title="Bio" alt="bio" width="40"
+								height="40" />&nbsp;
+						</div>
+						<div class="description">
+							<p>Developed a web scraping program using Selenium to extract URLs from JavaScript web pages
+								and download data from web servers.
+								Created a local database for genome SNP analysis, filtering out duplicate downloads.
+								Resulted in a remarkable 150% increase in the efficiency of database updating.
+								Streamlined the process, saving time and enhancing productivity for genetic research.
+							</p>
+						</div>
+
+
+					</div>
+				</div>
+
+
+
+
+
+			</article>
+
+			<!-- About -->
+			<article id="work">
+				<h2 class="major">Project</h2>
+				<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+				<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at
+					eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula
+					lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada
+					fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum
+					dolor sit amet.</p>
+			</article>
+
+			<!-- Contact -->
+			<article id="contact">
+				<h2 class="major">Contact</h2>
+				<!-- <form method="post" action="#">
+					<div class="fields">
+						<div class="field half">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="4"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" class="primary" /></li>
+						<li><input type="reset" value="Reset" /></li>
+					</ul>
+				</form> -->
+
+
+				<p> <a class="chonky-underline-violet has-hover-anim" href="mailto:3mingziwen@gmail.com">3mingziwen@gmail.com</a></p>
+
+				<!-- <p>Feel free to contact me if you are interested in discussing any job opportunities. I look forward to hearing from you!</p> -->
+				<ul class="icons">
+					
+					
+					<li><a href="#" class="icon brands fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+					<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+					<!-- <li><a href="mailto:3mingziwen@gmail.com" class="icon brands fas fa-envelope"><span class="label">email</span></a></li> -->
+					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</article>
+
+			<!-- Elements -->
+			<article id="elements">
+				<h2 class="major">Elements</h2>
+
+				<section>
+					<h3 class="major">Text</h3>
+					<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is
+						<em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a
+							href="#">this is a link</a>.
+					</p>
+					<hr />
+					<h2>Heading Level 2</h2>
+					<h3>Heading Level 3</h3>
+					<h4>Heading Level 4</h4>
+					<h5>Heading Level 5</h5>
+					<h6>Heading Level 6</h6>
+					<hr />
+					<h4>Blockquote</h4>
+					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus
+						euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
+						iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem
+						ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+					<h4>Preformatted</h4>
+					<pre><code>i = 0;
 
 while (!deck.isInOrder()) {
     print 'Iteration ' + i;
@@ -302,238 +466,242 @@ while (!deck.isInOrder()) {
 }
 
 print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+				</section>
 
-								<section>
-									<h3 class="major">Lists</h3>
+				<section>
+					<h3 class="major">Lists</h3>
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+					<h4>Unordered</h4>
+					<ul>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+					<h4>Alternate</h4>
+					<ul class="alt">
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
+					<h4>Ordered</h4>
+					<ol>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis viverra.</li>
+						<li>Felis enim feugiat.</li>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis lorem.</li>
+						<li>Felis enim et feugiat.</li>
+					</ol>
+					<h4>Icons</h4>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
+					<h4>Actions</h4>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+				</section>
 
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
+				<section>
+					<h3 class="major">Table</h3>
+					<h4>Default</h4>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
 					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+					<h4>Alternate</h4>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</section>
 
-			</div>
+				<section>
+					<h3 class="major">Buttons</h3>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Primary</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button">Default</a></li>
+						<li><a href="#" class="button small">Small</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+						<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+					</ul>
+					<ul class="actions">
+						<li><span class="button primary disabled">Disabled</span></li>
+						<li><span class="button disabled">Disabled</span></li>
+					</ul>
+				</section>
 
-		<!-- BG -->
-			<div id="bg"></div>
+				<section>
+					<h3 class="major">Form</h3>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="demo-name">Name</label>
+								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+							</div>
+							<div class="field half">
+								<label for="demo-email">Email</label>
+								<input type="email" name="demo-email" id="demo-email" value=""
+									placeholder="3mingziwen@gmail.com" />
+							</div>
+							<div class="field">
+								<label for="demo-category">Category</label>
+								<select name="demo-category" id="demo-category">
+									<option value="">-</option>
+									<option value="1">Manufacturing</option>
+									<option value="1">Shipping</option>
+									<option value="1">Administration</option>
+									<option value="1">Human Resources</option>
+								</select>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+								<label for="demo-priority-low">Low</label>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-high" name="demo-priority">
+								<label for="demo-priority-high">High</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-copy" name="demo-copy">
+								<label for="demo-copy">Email me a copy</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-human" name="demo-human" checked>
+								<label for="demo-human">Not a robot</label>
+							</div>
+							<div class="field">
+								<label for="demo-message">Message</label>
+								<textarea name="demo-message" id="demo-message" placeholder="Enter your message"
+									rows="6"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+				</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			</article>
 
-	</body>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/gifplayer.js"></script>
+
+</body>
+
 </html>
