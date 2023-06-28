@@ -1667,23 +1667,29 @@ input, select, textarea {
 		}
 		.container {
 			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			align-content: center;
+		
 		  }
 		  
-		  .image-main-container {
+		  /* .image-main-container {
 			flex-basis: 50%;
 			margin-right: 1.5rem; /* Adjust the margin as needed */
-		  }
+		  /* } */ 
 		  
 		  .image-main {
-			display: block;
-			width: 500px;
+			/* display: block; */
+			width: 450px;
 			height: auto;
+			margin-right: 1.5rem; 
 			
 		  }
 		  
-		  .text-container {
-			flex: 1;
-		  }
+		  .work-details{ 
+			width: 450px;
+			height: auto;
+		   }
 		  
 		  
 		 
