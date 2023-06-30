@@ -782,11 +782,15 @@ input, select, textarea {
 		list-style: none;
 		margin-left: -1rem;
 		padding-left: 0;
+		flex-wrap: wrap;
+  justify-content: flex-start;
+
 	}
 
 		ul.actions li {
 			padding: 0 0 0 1rem;
 			vertical-align: middle;
+			margin-top: 0.2rem;
 		}
 
 		ul.actions.special {
@@ -1158,7 +1162,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/bg_2.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1672,6 +1676,13 @@ input, select, textarea {
 			align-content: center;
 		
 		  }
+
+		  .container_edu{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-content: center;
+		  }
 		  
 		  /* .image-main-container {
 			flex-basis: 50%;
@@ -1680,30 +1691,59 @@ input, select, textarea {
 		  
 		  .image-main {
 			/* display: block; */
-			width: 450px;
+			width: 400px;
 			height: auto;
 			margin-right: 1.5rem; 
 			
 		  }
 		  
 		  .work-details{ 
-			width: 450px;
+			width: 400px;
 			height: auto;
 		   }
 		  
-		  
+		   .edu-out{
+			width: 100%;
+		   }
 		 
 		  .animated-container {
 			opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s, transform 0.5s;
-		  }
+			transform: translateY(20px);
+			transition: opacity 0.5s, transform 0.5s;
+					}
 		  
 		  .bounce {
 			transform: translateY(0);
  			opacity: 1;
 		  }
-     
+     .withboarder{
+		/* border: 1px solid  rgba(255, 255, 255, 0.175);; Set the border style and color */
+		border-radius: 10px; /* Adjust the border radius to control the roundness */
+		padding: 10px; 
+		background-color:  rgba(255, 255, 255, 0.175);;
+		/* width: 135px; /* Set the width */
+  /* height: 150px; */ 
+
+	 }
+	 .container_skill{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		/* grid-template-rows: 1fr; */
+		gap: 7px;
+	 }
+	 .d{
+		/* width: 130px; /* Set the width */
+  		/* height: 120px; */ 
+
+	 }
+	 .w{
+		/* width: 150px; /* Set the width */
+  		/* height: 140px; */
+	 }
+	 .t{
+		/* width: 135px; /* Set the width */
+  		/* height: 155px; */ 
+	 }
 	
 		  
 		  /* CSS */
