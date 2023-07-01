@@ -1702,6 +1702,14 @@ input, select, textarea {
 			height: auto;
 		   }
 		  
+		   @media (max-width: 768px) {
+			/* Adjust the breakpoint (768px) as needed */
+		  
+			.image-main {
+			  margin-right: 0; /* Remove the right margin on mobile */
+			}
+		  }
+		  
 		   .edu-out{
 			width: 100%;
 		   }
