@@ -1212,9 +1212,7 @@ input, select, textarea {
 	transition: background-color 0.3s ease; /* Smooth transition for background color */
   }
   
-  .project-info:hover {
-	background-color: #505050; /* Slightly lighter on hover for interactive effect */
-  }
+
   
   .image-container {
 	width: 100%;
